@@ -9,7 +9,7 @@ if [[ -z "$input" ]]; then
     echo "Formatting"
 else
     echo "Not accepted"
-    exit(1)
+    exit
 fi
 
 # Formatting the SD card to FAT32 format
@@ -21,12 +21,30 @@ if [ -e "./artifacts/garlic.img" ]; then
 else
     # Copy garlic image from Network artifacts into local repo
     echo "Pulling garlic.img from theconeportal.net"
+    mkdir -p ./artifacts
     cp /Volumes/Public/artifacts/garlic.img ./artifacts/garlic.img
+fi
 
 # Unmounting the disk to get ready to image it
-diskutil unmountDisk /dev/disk2
+echo "Unmounting /dev/disk2"
+diskutil unmountDisk force /dev/disk2
+
+# Sleep
+echo "Sleeping for 2 seconds"
+sleep 2
 
 # Imaging the SD card with garlic os
+echo "Re-Imaging /dev/disk2"
 sudo dd bs=1m if=./artifacts/garlic.img of=/dev/rdisk2 conv=sync
 
+# Sleep
+echo "Sleeping for 2 seconds"
+sleep 2
+
 # Copy Roms onto SD Card
+echo "Copying ROMs"
+cp -r -f "/Volumes/Public/Emulation/Roms/" "/Volumes/NO NAME 1/Roms/"
+echo "Creating Saves directory on SD card"
+mkdir -p "/Volumes/NO NAME 1/Saves/"
+echo "Copying Saves"
+cp -r -f "/Volumes/Public/Emulation/Saves/" "/Volumes/NO NAME 1/Saves/"
