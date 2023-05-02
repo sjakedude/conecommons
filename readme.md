@@ -14,3 +14,7 @@ Second arg is the emulator you want to send the rom to.
 Edit the hostname in the code if the IP has changed.
 
 Jake
+
+## Anbernic Sync
+
+If you are on a Mac, run the `setup_anbernic.sh` script.
