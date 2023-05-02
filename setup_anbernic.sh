@@ -43,8 +43,8 @@ sleep 2
 
 # Copy Roms onto SD Card
 echo "Copying ROMs"
-cp -r -f "/Volumes/Public/Emulation/Roms/" "/Volumes/NO NAME 1/Roms/"
+cp -r -f "/Volumes/Public/Emulation/Anbernic/Roms/" "/Volumes/NO NAME 1/Roms/"
 echo "Creating Saves directory on SD card"
 mkdir -p "/Volumes/NO NAME 1/Saves/"
 echo "Copying Saves"
-cp -r -f "/Volumes/Public/Emulation/Saves/" "/Volumes/NO NAME 1/Saves/"
+cp -r -f "/Volumes/Public/Emulation/Anbernic/Saves/" "/Volumes/NO NAME 1/Saves/"
