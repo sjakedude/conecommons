@@ -1,13 +1,12 @@
 import os
 import json
 import psutil
-from save_converter import SaveConverter
+from lib.anbernic.save_converter import SaveConverter
 
 # Prompt the user to pick a mode
 print("Modes:")
 print("1. Transfer from SD to PC")
 print("2. Transfer from PC to SD")
-
 user_input = input("Select a mode: ")
 
 # Convert the user's input to an integer
