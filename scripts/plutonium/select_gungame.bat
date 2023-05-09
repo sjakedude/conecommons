@@ -2,8 +2,9 @@
 # the gamemode of the plutonium t5 server
 # to gun game.
 
-# Getting to the t5 files directory
-cd C:\Users\Jake\AppData\Local\Plutonium\storage\t5
+# Getting to the t5 repo directory
+C:
+cd \Users\Jake\AppData\Local\Plutonium\storage\t5
 
 # Switch to gungame configs
 git status
@@ -13,4 +14,6 @@ git checkout gun_game
 git pull origin gun_game
 
 # Restart server
+Z:
+cd Z:\Private\git\conecommons\scripts\plutonium
 restart.bat

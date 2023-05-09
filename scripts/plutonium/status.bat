@@ -7,9 +7,6 @@ echo "Checking branch"
 C:
 cd /Users/Jake/AppData/Local/Plutonium/storage/t5
 git branch
-for /f "delims=* tokens=2" %%a in ('git branch') do (
-    set "activeBranch=%%a"
-    goto :next
-)
-:next
-echo Active branch: %activeBranch%
+echo "Active branch is: "
+git branch --show-current
+Z:
