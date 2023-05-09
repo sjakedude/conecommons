@@ -6,6 +6,7 @@ for /f "tokens=2" %%a in ('tasklist ^| findstr "plutonium-bootstrapper"') do (
 echo "Checking branch"
 C:
 cd /Users/Jake/AppData/Local/Plutonium/storage/t5
+git branch
 for /f "delims=* tokens=2" %%a in ('git branch') do (
     set "activeBranch=%%a"
     goto :next
