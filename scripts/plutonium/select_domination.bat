@@ -15,5 +15,5 @@ git pull origin domination
 
 :: Restart server
 Z:
-cd Z:\Private\git\conecommons\scripts\plutonium
+cd Z:\Private\conecommons\scripts\plutonium
 restart.bat
