@@ -3,6 +3,3 @@ for /f "tokens=2" %%a in ('tasklist ^| findstr "python"') do (
     echo %%a
     taskkill /PID %%a /F
 )
-Z:
-cd \Private\dashfox
-launch.bat
