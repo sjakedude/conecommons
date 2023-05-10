@@ -2,16 +2,13 @@
 :: dashfox with the latest commit from the
 :: master branch, and restart the API
 
-:: Shutting down the API
+:: Pulling the latest commit from remote
 Z:
-cd \Private\conecommons\scripts\dashfox
-shutdown.bat
-
-:: Pull latest commit from remote
 cd \Private\dashfox
 git status
 git fetch
 git pull origin master
 
-:: Launch server
-launch.bat
+:: Restarting server
+cd \Private\conecommons\scripts\dashfox
+restart.bat
