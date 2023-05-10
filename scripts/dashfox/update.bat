@@ -14,4 +14,4 @@ git fetch
 git pull origin master
 
 :: Launch server
-restart.bat
+launch.bat
