@@ -2,4 +2,4 @@
 
 Z:
 cd Private\minecraft_latest_server
-Launch.bat
+./Launch.bat
