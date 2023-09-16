@@ -1,5 +1,5 @@
 @echo off
 
-Z:
-cd Private\minecraft_latest_server
-Launch.bat
+C:
+cd C:\Users\Jake\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+START minecraft-latest.lnk

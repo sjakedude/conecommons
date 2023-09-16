@@ -1,5 +1,5 @@
 @echo off
 
 C:
-cd \Users\Jake\Desktop\minecraft_ftb_server
-Launch.bat
+cd C:\Users\Jake\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+START minecraft-ftb.lnk
