@@ -2,5 +2,4 @@
 
 Z:
 cd Z:\Private\minecraft_beta_server
-START /b launch.bat
-exit
+START minecraft-beta.lnk
