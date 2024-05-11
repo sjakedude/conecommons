@@ -1,5 +1,5 @@
 @echo off
 
-C:
-cd C:\Users\Jake\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+Z:
+cd Z:\Private\minecraft_latest_server
 START minecraft-latest.lnk
