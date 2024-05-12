@@ -1,4 +1,3 @@
-@echo off
 cd \Private\dashfox
 set "pidArray="
 for /f "tokens=2" %%a in ('tasklist ^| findstr "python"') do (
