@@ -1,7 +1,0 @@
-open 192.168.0.233
-xboxftp
-xboxftp
-cd /Hdd1/Content/E00000E4D88A136A/4D53082D/00000001
-ls
-get Gears2Checkpoint
-quit
