@@ -1,4 +1,4 @@
-echo open 192.168.0.233 > upload_file.txt
+echo open 192.168.0.233 >> upload_file.txt
 echo xboxftp >> upload_file.txt
 echo xboxftp >> upload_file.txt
 echo cd /Hdd1/Content/%1/%2/00000001 >> upload_file.txt
