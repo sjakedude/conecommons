@@ -1,5 +1,5 @@
 echo Z: > download_file.txt
-echo cd Private/rom_saves/%2/%3 > download_file.txt
+echo cd Private/rom_saves/%5/%2/%3 > download_file.txt
 echo open %1 > download_file.txt
 echo xboxftp >> download_file.txt
 echo xboxftp >> download_file.txt
