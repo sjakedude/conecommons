@@ -5,4 +5,4 @@ echo user xboxftp xboxftp >> download_file.txt
 echo cd /Hdd1/Content/%2/%3/00000001 >> download_file.txt
 echo get %4 >> download_file.txt
 echo quit >> download_file.txt
-ftp -s:download_file.txt
+ftp -n -s:retrieve_metadata.txt
