@@ -25,7 +25,7 @@ class SaveConverter:
 
     def convert_srm_to_sav(self):
         # Open the .srm file in binary mode and read the data
-        with open(self.srm_file_path, "rb") as srm_file:
+        with open(self.srm_path, "rb") as srm_file:
             srm_data = srm_file.read()
 
         # Pad the .srm data with zeros to the full size of the .sav file
@@ -36,7 +36,7 @@ class SaveConverter:
         sav_data = metadata + sav_data
 
         # Write the data to the .sav file
-        with open(self.sav_file_path, "wb") as sav_file:
+        with open(self.sav_path, "wb") as sav_file:
             sav_file.write(sav_data)
 
     def __calculate_sav_size_factor__(self):

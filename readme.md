@@ -19,7 +19,7 @@ Jake
 
 Running this process will purge all data on the SD Card and set it up with all the Roms and save files from the NAS on theconeportal.net
 
-0. From your Macbook, make sure you are connected to the cone LAN and have access to theconeportal.net NAS. 
+0. From your Macbook, make sure you are connected to the cone LAN and have access to theconeportal.net NAS.
 
 1. Plug in the SD Card from your anbernic into the side of the macbook.
 
